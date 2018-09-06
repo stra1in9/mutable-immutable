@@ -51,11 +51,10 @@ public class Main {
         System.out.println("b.b2 after initialization:" + b.getB2());
 
         b.getB1().setTime(100500);
-        b.getB2().replace(b.getB2(), "01.01.1970 03:01:40");
+        // No void method to modify String (b.b2)
 
         System.out.println("b.b1 after modification:" + b.getB1());
         System.out.println("b.b2 after modification:" + b.getB2());
         // ------------------------------------------------------------------------------------------------------------
-
     }
 }
