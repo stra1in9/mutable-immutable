@@ -10,7 +10,7 @@ final public class B {
         Date   b1,
         String b2
     ) {
-       this.b1 = b1;
+       this.b1 = new Date(b1.getTime());
        this.b2 = b2;
     }
 
